@@ -1,0 +1,62 @@
+<h1 class="my-3">Página de consultas</h1>
+
+{{#if male}}
+
+    <h4 class="flex-start">Hombres</h4>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Fecha</th>
+            </tr>
+        </thead>
+
+        {{#each male}}
+
+            <tbody>
+                <tr>
+                    <th scope="row">{{this.id}}</th>
+                    <td>{{this.nombre}}</td>
+                    <td>{{this.apellido}}</td>
+                    <td>{{this.fecha}}</td>
+                </tr>
+            </tbody>
+
+        {{/each}}
+    </table>
+
+{{/if}}
+
+{{#if female}}
+    <h4>Mujeres</h4>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Fecha</th>
+            </tr>
+        </thead>
+
+        {{#each female}}
+
+            <tbody>
+                <tr>
+                    <th scope="row">{{this.id}}</th>
+                    <td>{{this.nombre}}</td>
+                    <td>{{this.apellido}}</td>
+                    <td>{{this.fecha}}</td>
+                </tr>
+            </tbody>
+
+        {{/each}}
+    </table>
+
+{{/if}}
+
+<a href="/consultas" class="btn btn-primary my-3">Ver más consultas</a>

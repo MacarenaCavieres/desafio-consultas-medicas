@@ -2,10 +2,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    min-height: 100vh;
+nav,
+footer {
+    background-color: #e4c59e;
 }
 
-nav {
-    background-color: #e4c59e;
+main {
+    min-height: 80%;
 }
